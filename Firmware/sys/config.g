@@ -6,7 +6,7 @@
 ; General preferences
 G90                                                     ; send absolute coordinates...
 M83                                                     ; ...but relative extruder moves
-M550 P"BIQU B1 IDEX"                                    ; set printer name
+M550 P"BIQU_B1_IDEX"                                    ; set printer name
 
 ; Network
 M552 S0                                                 ; disable network
@@ -22,7 +22,7 @@ M569 P3 S0                                              ; physical drive 3 goes 
 M569 P4 S1                                              ; physical drive 4 goes forwards using default driver timings
 M569 P5 S0                                              ; physical drive 5 goes forwards using default driver timings
 M584 X0 Y1 Z2 U5 E3:4                                   ; set drive mapping
-M350 X16 Y16 u16 Z16 E16:16 I1                          ; configure microstepping with interpolation
+M350 X16 Y16 U16 Z16 E16:16 I1                          ; configure microstepping with interpolation
 M92 X80.00 Y80.00 U64.00 Z400.00 E93.00:93.00           ; set steps per mm
 M566 X900.00 Y900.00 U900.00 Z60.00 E120.00             ; set maximum instantaneous speed changes (mm/min)
 M203 X12000.00 Y12000.00 U12000.00 Z600.00 E1200.00     ; set maximum speeds (mm/min)
@@ -73,7 +73,7 @@ M563 P0 D0 H1 F0                                        ; define tool 0
 G10 P0 X0 Y0 Z0                                         ; set tool 0 axis offsets
 G10 P0 R0 S0                                            ; set initial tool 0 active and standby temperatures to 0C
 M563 P1 D1 H2 X3 F0                                     ; define tool 1
-G10 P1 X0 Y0 Z0                                         ; set tool 1 axis offsets
+G10 P1 U-82 Y0 Z0                                         ; set tool 1 axis offsets
 G10 P1 R0 S0                                            ; set initial tool 1 active and standby temperatures to 0C
 
 M563 P2 D0:1 H1:2 X0:3 F0:1 S"COPY" 
