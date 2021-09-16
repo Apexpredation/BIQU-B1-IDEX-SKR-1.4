@@ -76,10 +76,10 @@ M563 P1 D1 H2 X5 F0                                     ; define tool 1
 G10 P1 U82 Y0 Z0                                       ; set tool 1 axis offsets
 G10 P1 R0 S0                                            ; set initial tool 1 active and standby temperatures to 0C
 
-M563 P2 D0:1 H1:2 X0:3 F0:1 S"COPY" 
+M563 P2 D0:1 H1:2 X0:5 F0:1 S"COPY" 
 G10 P2 X55 Y0 U-55 S0 R0  
 M567 P2 E1:1
-M563 P3 D0:1 H1:2 X0:3 F0:1 S"MIRROR" 
+M563 P3 D0:1 H1:2 X0:5 F0:1 S"MIRROR" 
 G10 P3 X-116.2 Y0 U0 S0 R0  
 M567 P3 E1:1
 
