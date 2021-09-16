@@ -72,8 +72,8 @@ M106 P0 S0 H-1                                          ; set fan 0 value. Therm
 M563 P0 D0 H1 F0                                        ; define tool 0
 G10 P0 X0 Y0 Z0                                         ; set tool 0 axis offsets
 G10 P0 R0 S0                                            ; set initial tool 0 active and standby temperatures to 0C
-M563 P1 D1 H2 X3 F0                                     ; define tool 1
-G10 P1 U-82 Y0 Z0                                       ; set tool 1 axis offsets
+M563 P1 D1 H2 X5 F0                                     ; define tool 1
+G10 P1 U82 Y0 Z0                                       ; set tool 1 axis offsets
 G10 P1 R0 S0                                            ; set initial tool 1 active and standby temperatures to 0C
 
 M563 P2 D0:1 H1:2 X0:3 F0:1 S"COPY" 
